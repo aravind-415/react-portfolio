@@ -65,7 +65,7 @@ const Navbar = () => {
             <div className="mx-auto px-4 sm:px-6 lg:px-[10%]">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
-                    <img src="/assets/logo.png" alt="Logo" className="w-16 h-16 rounded-full" />
+                    <img src="/favicon.ico" alt="Logo" className="w-16 h-16 rounded-full" />
                     <div className="flex-shrink-0">
                         <a
                             href="#Home"
