@@ -85,9 +85,9 @@ const SocialLink = ({ icon, link, hoverColor }) => (
 const WORDS = ["Frontend Developer", "UX/UI Designer"];
 const TECH_STACK = ["React", "Javascript", "Node.js", "Tailwind"];
 const SOCIAL_LINKS = [
-  { icon: faGithub, link: "https://github.com/EkiZR", hoverColor: "#FFFFFF" }, 
-  { icon: faLinkedin, link: "https://www.linkedin.com/in/ekizr/", hoverColor: "#0077B5" }, 
-  { icon: faInstagram, link: "https://www.instagram.com/ekizr_/?hl=id", hoverColor: "#E1306C" }
+  { icon: faGithub, link: "https://github.com/aravind-415", hoverColor: "#FFFFFF" }, 
+  { icon: faLinkedin, link: "https://www.linkedin.com/in/aravind-annadata", hoverColor: "#0077B5" }, 
+  { icon: faInstagram, link: "https://www.instagram.com/aravind_415", hoverColor: "#E1306C" }
 ];
 
 const Home = () => {
@@ -135,9 +135,9 @@ const Home = () => {
     <>
       <Navbar />
       <div className="bg-black overflow-hidden" id="Home">
-        <div className={`relative z-10 transition-all duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}>
+        <div className={`relative z-10 mt-20 md:mt-5 transition-all duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`} >
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col sm:flex-col-reverse lg:flex-row items-center justify-center min-h-screen py-8 sm:py-12 lg:py-16 md:justify-between gap-6 sm:gap-8 lg:gap-12">
+            <div className="flex flex-col sm:flex-col-reverse lg:flex-row items-center justify-center h-full py-8 sm:py-12 lg:py-16 md:justify-between gap-6 sm:gap-8 lg:gap-12">
               {/* Left Column */}
               <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6 text-center lg:text-left order-1 lg:order-1"
                 data-aos="fade-right"

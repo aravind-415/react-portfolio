@@ -223,7 +223,7 @@ const ContactPage = () => {
                 </div>
               </a>
               <a
-                href="https://instagram.com/aravind415"
+                href="https://instagram.com/aravind_415"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-aos="fade-up"
