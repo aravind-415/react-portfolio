@@ -17,6 +17,9 @@ import {
   faJs,
   faReact,
   faBootstrap,
+  faAngular,
+  faCss,
+  faPython,
 } from "@fortawesome/free-brands-svg-icons";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 
@@ -25,13 +28,13 @@ const projects = [
   {
     id: "1",
     Img: "/assets/portfolio/Portfolio.png",
-    Title: "Project Six",
-    Description: "Blog platform with CMS.",
-    Link: "",
+    Title: "My Portfolio",
+    Description: "A web application showcasing my Skills and Projects.",
+    Link: "/",
     TechStack: [faReact, faJs],
   },
   {
-    id: "2",
+    id: "3",
     Img: "/assets/portfolio/Metacomic-Project.png",
     Title: "Metacomic Project",
     Description: "Developed a web app with my team during an internship.",
@@ -39,7 +42,7 @@ const projects = [
     TechStack: [faHtml5, faCss3Alt, faBootstrap],
   },
   {
-    id: "3",
+    id: "4",
     Img: "/assets/portfolio/Blog-Project.png",
     Title: "Blog Website",
     Description: "Built a blog website to improve web development skills.",
@@ -47,7 +50,7 @@ const projects = [
     TechStack: [faHtml5, faCss3Alt, faBootstrap],
   },
   {
-    id: "4",
+    id: "5",
     Img: "/assets/portfolio/AgriHack-Project.png",
     Title: "AgriHack - College Event",
     Description: "Developed the Agrihack event website as part of a team project.",
@@ -55,7 +58,7 @@ const projects = [
     TechStack: [faJs, faBootstrap],
   },
   {
-    id: "5",
+    id: "6",
     Img: "/assets/portfolio/Rog-Project.png",
     Title: "ROG Website Clone (4-Hour Challenge)",
     Description: "Developed a ROG clone overnight in just 4 hours.",
@@ -63,12 +66,12 @@ const projects = [
     TechStack: [faHtml5, faCss3Alt, faBootstrap],
   },
   {
-    id: "6",
-    Img: "/assets/portfolio/Old-Portfolio.png",
-    Title: "Old Portfolio",
-    Description: "A web application showcasing my Skills and Projects.",
-    Link: "https://aravind-415.github.io/Portfolio-2/",
-    TechStack: [faHtml5, faCss3Alt, faBootstrap],
+    id: "2",
+    Img: "/assets/portfolio/talentvivid.png",
+    Title: "Talentvivid",
+    Description: "A Company Website",
+    Link: "https://talentvivid.azurewebsite.net",
+    TechStack: [faAngular, faPython, faCss,],
   },
 ];
 
