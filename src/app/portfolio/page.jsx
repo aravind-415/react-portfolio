@@ -34,6 +34,14 @@ const projects = [
     TechStack: [faReact, faJs],
   },
   {
+    id: "2",
+    Img: "/assets/portfolio/talentvivid.png",
+    Title: "Talentvivid",
+    Description: "A Company Website",
+    Link: "https://talentvivid.azurewebsites.net",
+    TechStack: [faAngular, faPython, faCss,],
+  },
+  {
     id: "3",
     Img: "/assets/portfolio/Metacomic-Project.png",
     Title: "Metacomic Project",
@@ -65,14 +73,7 @@ const projects = [
     Link: "https://aravind-415.github.io/Rog-Clone/",
     TechStack: [faHtml5, faCss3Alt, faBootstrap],
   },
-  {
-    id: "2",
-    Img: "/assets/portfolio/talentvivid.png",
-    Title: "Talentvivid",
-    Description: "A Company Website",
-    Link: "https://talentvivid.azurewebsite.net",
-    TechStack: [faAngular, faPython, faCss,],
-  },
+
 ];
 
 // Static data for certificates
