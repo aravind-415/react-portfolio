@@ -93,17 +93,17 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
           {/* Icons */}
           <div className="flex justify-center h-14 gap-3 sm:gap-4 md:gap-8 mb-6 sm:mb-8 md:mb-12">
             <div data-aos="fade-up" data-aos-delay="200">
-              <IconButton link="https://github.com">
+              <IconButton link="https://github.com/aravind-415">
                 <FontAwesomeIcon icon={faGithub} className="text-3xl" />
               </IconButton>
             </div>
             <div data-aos="fade-up" data-aos-delay="400">
-              <IconButton link="https://linkedin.com">
+              <IconButton link="https://www.linkedin.com/in/aravind-annadata">
                 <FontAwesomeIcon icon={faLinkedin} className="text-3xl" />
               </IconButton>
             </div>
             <div data-aos="fade-up" data-aos-delay="600">
-              <IconButton link="mailto:example@gmail.com">
+              <IconButton link="mailto:aravindannadata1504@gmail.com">
                 <FontAwesomeIcon icon={faEnvelope} className="text-3xl" />
               </IconButton>
             </div>
