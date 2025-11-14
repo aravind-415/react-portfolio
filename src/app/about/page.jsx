@@ -7,7 +7,7 @@ const Header = () => (
   <div className="text-center lg:mb-8 mb-2 px-[5%]">
     <div className="inline-block relative group">
       <h2
-        className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#00F0FF] to-[#FF10F0]"
+        className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#00F0FF] to-[#FF10F0]"
         data-aos="zoom-in-up"
         data-aos-duration="600"
       >
@@ -25,15 +25,15 @@ const ProfileImage = () => (
       data-aos-duration="1000"
     >
       <div className="absolute inset-0 rounded-full overflow-hidden z-0 hidden sm:block">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#00F0FF] to-[#FF10F0] rounded-full blur-2xl animate-spin-slower opacity-25" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#00F0FF] to-[#FF10F0] rounded-full blur-2xl animate-pulse-slow opacity-15" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#00F0FF] to-[#FF10F0] rounded-full blur-2xl animate-float opacity-15" />
+        <div className="absolute inset-0 bg-linear-to-r from-[#00F0FF] to-[#FF10F0] rounded-full blur-2xl animate-spin-slower opacity-25" />
+        <div className="absolute inset-0 bg-linear-to-r from-[#00F0FF] to-[#FF10F0] rounded-full blur-2xl animate-pulse-slow opacity-15" />
+        <div className="absolute inset-0 bg-linear-to-r from-[#00F0FF] to-[#FF10F0] rounded-full blur-2xl animate-float opacity-15" />
       </div>
       <div className="relative w-full h-full">
         <div className="w-full h-full rounded-full overflow-hidden shadow-[0_0_40px_rgba(120,119,198,0.3)] transform transition-all duration-700 group-hover:scale-105">
           <div className="absolute inset-0 border-4 border-white/20 rounded-full z-20 transition-all duration-700 group-hover:border-white/40 group-hover:scale-105" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40 z-10 transition-opacity duration-700 hidden sm:block" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#00F0FF]/10 to-[#FF10F0]/10 opacity-20 z-10 group-hover:opacity-100 transition-opacity duration-700 hidden sm:block rounded-full" />
+          <div className="absolute inset-0 bg-linear-to-b from-black/20 via-transparent to-black/40 z-10 transition-opacity duration-700 hidden sm:block" />
+          <div className="absolute inset-0 bg-linear-to-r from-[#00F0FF]/10 to-[#FF10F0]/10 opacity-20 z-10 group-hover:opacity-100 transition-opacity duration-700 hidden sm:block rounded-full" />
           <img
             src="/assets/aravind.jpeg"
             alt="Profile"
@@ -41,8 +41,8 @@ const ProfileImage = () => (
             loading="lazy"
           />
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-700 z-20 hidden sm:block">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#00F0FF] to-[#FF10F0] opacity-20 transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#00F0FF] to-[#FF10F0] opacity-20 transform translate-y-full group-hover:-translate-y-full transition-transform duration-1000 delay-100" />
+            <div className="absolute inset-0 bg-linear-to-r from-[#00F0FF] to-[#FF10F0] opacity-20 transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+            <div className="absolute inset-0 bg-linear-to-r from-[#00F0FF] to-[#FF10F0] opacity-20 transform translate-y-full group-hover:-translate-y-full transition-transform duration-1000 delay-100" />
             <div className="absolute inset-0 border-8 border-white/10 scale-0 group-hover:scale-100 transition-transform duration-700 animate-pulse-slow" />
           </div>
         </div>
@@ -55,7 +55,7 @@ const StatCard = ({ color, value, label, description, animation }) => (
   <div data-aos={animation} data-aos-duration="1300" className="relative group">
     <div className="relative z-10 bg-gray-900/50 backdrop-blur-lg rounded-2xl p-6 border border-white/10 overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl h-full flex flex-col justify-between">
       <div
-        className={`absolute -z-10 inset-0 bg-gradient-to-r from-[#00F0FF] to-[#FF10F0] opacity-10 group-hover:opacity-20 transition-opacity duration-300`}
+        className={`absolute -z-10 inset-0 bg-linear-to-r from-[#00F0FF] to-[#FF10F0] opacity-10 group-hover:opacity-20 transition-opacity duration-300`}
       ></div>
       <div className="flex items-center justify-between mb-4">
         <div className="w-16 h-16 rounded-full flex items-center justify-center bg-white/10 transition-transform group-hover:rotate-6">
@@ -138,7 +138,7 @@ const AboutPage = () => {
     },
     {
       color: "from-[#00F0FF] to-[#FF10F0]",
-      value: '0.6Y',
+      value: '0.10Y',
       label: "Years of Experience",
       description: "Continuous learning journey",
       animation: "fade-left",
@@ -176,7 +176,7 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1000"
             >
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00F0FF] to-[#FF10F0]">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-[#00F0FF] to-[#FF10F0]">
                 Hello, I'm
               </span>
               <span
@@ -201,18 +201,18 @@ const AboutPage = () => {
             </p>
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
               <a
-                href="/assets/resume/resume.pdf"
+                href="/assets/resume/Aravind.pdf"
                 download
                 className="w-full lg:w-auto transition-all duration-500 group relative"
               >
                 <button
                   data-aos="fade-up"
                   data-aos-duration="800"
-                  className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg bg-gradient-to-r from-[#00F0FF] to-[#FF10F0] text-black font-medium transition-all duration-500 hover:scale-110 hover:shadow-[0_0_20px_rgba(0,240,255,0.8)] cursor-pointer relative overflow-hidden group-hover:animate-gradient-shift bg-[length:200%_200%]"
+                  className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg bg-linear-to-r from-[#00F0FF] to-[#FF10F0] text-black font-medium transition-all duration-500 hover:scale-110 hover:shadow-[0_0_20px_rgba(0,240,255,0.8)] cursor-pointer relative overflow-hidden group-hover:animate-linear-shift bg-size-[200%_200%]"
                   style={{ transition: "all 0.2s ease-in-out" }}
                 >
                   Download CV
-                  <span className="absolute inset-0 bg-gradient-to-r from-[#00F0FF]/20 to-[#FF10F0]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+                  <span className="absolute inset-0 bg-linear-to-r from-[#00F0FF]/20 to-[#FF10F0]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
                 </button>
               </a>
               <a
@@ -222,11 +222,11 @@ const AboutPage = () => {
                 <button
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg border-2 border-[#FF10F0] text-[#FF10F0] font-medium bg-transparent hover:scale-110 hover:shadow-[0_0_20px_rgba(0,240,255,0.8)] hover:border-[#00F0FF] cursor-pointer relative overflow-hidden group-hover:animate-gradient-shift bg-[length:200%_200%] bg-gradient-to-r from-transparent to-transparent hover:bg-gradient-to-r hover:from-[#00F0FF]/10 hover:to-[#FF10F0]/10"
+                  className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg border-2 border-[#FF10F0] text-[#FF10F0] font-medium bg-transparent hover:scale-110 hover:shadow-[0_0_20px_rgba(0,240,255,0.8)] hover:border-[#00F0FF] cursor-pointer relative overflow-hidden group-hover:animate-linear-shift bg-size-[200%_200%] bg-linear-to-r from-transparent to-transparent hover:bg-linear-to-r hover:from-[#00F0FF]/10 hover:to-[#FF10F0]/10"
                   style={{ transition: "all 0.2s ease-in-out" }}
                 >
                   View Projects
-                  <span className="absolute inset-0 bg-gradient-to-r from-[#00F0FF]/20 to-[#FF10F0]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+                  <span className="absolute inset-0 bg-linear-to-r from-[#00F0FF]/20 to-[#FF10F0]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
                 </button>
               </a>
             </div>
@@ -265,7 +265,7 @@ const AboutPage = () => {
             opacity: 0.25;
           }
         }
-        @keyframes gradient-shift {
+        @keyframes linear-shift {
           0% {
             background-position: 0% 50%;
           }
