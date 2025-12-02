@@ -4,6 +4,7 @@ import AboutPage from './about/page'
 import Portfolio from './portfolio/page'
 import ContactPage from './contact/page'
 import WelcomeScreen from './welcome/page'
+import Experience from './Experience/page'
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
       <WelcomeScreen />
       <Home />
       <AboutPage />
+      <Experience />
       <Portfolio />
       <ContactPage />
     </div>
