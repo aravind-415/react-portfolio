@@ -174,7 +174,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                   className="text-indigo-600 text-xl"
                 />
                 <span className="bg-gradient-to-r from-[#FF10F0] to-[#00F0FF] bg-clip-text text-transparent">
-                  <TypewriterEffect text="www.aravindportfolio.xyz" />
+                  <TypewriterEffect text="aravindportfolio.xyz" />
                 </span>
               </div>
             </a>
