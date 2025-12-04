@@ -38,7 +38,7 @@ const projects = [
     Img: "/assets/portfolio/talentvivid.png",
     Title: "Talentvivid",
     Description: "A Company Website",
-    Link: "https://talentvivid.azurewebsites.net",
+    Link: "https://talentvivid.com",
     TechStack: [faAngular, faPython, faCss,],
   },
   {
