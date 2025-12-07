@@ -4,6 +4,9 @@ const nextConfig = {
     unoptimized: true,
   },
 
+  // Disable Turbopack since we use custom Webpack config
+  turbopack: {},
+
   webpack(config) {
     config.module.rules.push({
       test: /favicon\.ico$/,
@@ -16,4 +19,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig; // MUST use CommonJS for Webpack
+module.exports = nextConfig;
