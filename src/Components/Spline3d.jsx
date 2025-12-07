@@ -7,5 +7,3 @@ export default function App() {
     <Spline scene="https://prod.spline.design/JdYlzOjXULDWSwqw/scene.splinecode" />
   );
 }
-
-
