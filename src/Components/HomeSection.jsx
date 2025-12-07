@@ -135,7 +135,7 @@ const HomeSection = () => {
       <div className="bg-black overflow-hidden" id="Home">
         <div className={`relative z-10 mt-20 md:mt-5 transition-all duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`} >
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col sm:flex-col-reverse lg:flex-row items-center justify-center h-full py-8 sm:py-12 lg:py-16 md:justify-between gap-6 sm:gap-8 lg:gap-12">
+            <div className="flex flex-col md:flex-col-reverse lg:flex-row items-center justify-center h-full py-8 sm:py-12 lg:py-16 md:justify-between gap-6 sm:gap-8 lg:gap-12">
               {/* Left Column */}
               <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6 text-center lg:text-left order-1 lg:order-1"
                 data-aos="fade-right"
@@ -188,27 +188,27 @@ const HomeSection = () => {
                 </div>
               </div>
 
-              {/* Right Column - Default Image */}
-              {/* <div className="w-full sm:w-3/4 lg:w-1/2 h-[400px] sm:h-[500px] lg:h-[600px] xl:h-[700px] relative flex items-center justify-center order-2 lg:order-2 mt-6 sm:mt-8 lg:mt-0"
-                data-aos="fade-left"
-                data-aos-delay="2000"
-                data-aos-duration="1000">
-                <div className="relative w-full h-full">
-                  <div className="absolute inset-0 rounded-3xl blur-3xl opacity-20"></div>
-                  <div className="relative z-10 rounded-3xl overflow-hidden">
-                    <Spline3d className="h-[1000px] w-[1000px]" />
-                  </div>
+              {/* Right Column - Responsive Rendering */}
+              <div className="w-full lg:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[650px] xl:h-[750px] relative flex items-center justify-center order-2 lg:order-2 mt-6 sm:mt-8 lg:mt-0" 
+              data-aos="fade-left"
+              data-aos-delay="2000"
+              >
+                <img
+                  src="/assets/aravind-logo.png"
+                  alt="Aravind Logo"
+                  className="block lg:hidden w-full h-full object-contain"
+                />
+                <div className="hidden lg:block w-full h-full">
+                  <Spline3d />
                 </div>
-              </div> */}
-              <div className="w-full sm:w-3/4 lg:w-1/2 h-[400px] sm:h-[500px] lg:h-[600px] xl:h-[700px] relative flex items-center justify-center order-2 lg:order-2 mt-6 sm:mt-8 lg:mt-0">
-              <Spline3d/>
+
               </div>
+
             </div>
           </div>
         </div>
       </div>
 
-      {/* Custom CSS for hover effect */}
       <style jsx global>{`
         button.group:hover .fa-brands {
           color: var(--hover-color) !important;
