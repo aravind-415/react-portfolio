@@ -6,7 +6,7 @@ import { faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Typewriter } from 'react-simple-typewriter';
-import Navbar from "../navbar/page";
+import Spline3d from "./Spline3d";
 
 // Components
 const StatusBadge = () => (
@@ -70,10 +70,10 @@ const SocialLink = ({ icon, link, hoverColor }) => (
     <button className="group relative p-3 sm:p-4">
       <div className="absolute inset-0 bg-gradient-to-r from-[#00F0FF] to-[#FF10F0] rounded-xl blur-md opacity-20 group-hover:opacity-40 transition duration-300"></div>
       <div className="relative rounded-xl bg-[#1A1A1A]/50 cursor-pointer backdrop-blur-lg p-3 sm:p-4 flex items-center justify-center border border-[#00F0FF]/20 group-hover:border-[#00F0FF]/40 transition-all duration-300">
-        <FontAwesomeIcon 
-          icon={icon} 
-          size="xl" 
-          className="w-6 h-6 sm:w-8 sm:h-8 text-[#F0F0F0] transition-colors" 
+        <FontAwesomeIcon
+          icon={icon}
+          size="xl"
+          className="w-6 h-6 sm:w-8 sm:h-8 text-[#F0F0F0] transition-colors"
           style={{ "--hover-color": hoverColor }}
         />
       </div>
@@ -85,12 +85,12 @@ const SocialLink = ({ icon, link, hoverColor }) => (
 const WORDS = ["Frontend Developer", "UX/UI Designer"];
 const TECH_STACK = ["React", "Javascript", "Node.js", "Tailwind"];
 const SOCIAL_LINKS = [
-  { icon: faGithub, link: "https://github.com/aravind-415", hoverColor: "#FFFFFF" }, 
-  { icon: faLinkedin, link: "https://www.linkedin.com/in/aravind-annadata", hoverColor: "#0077B5" }, 
+  { icon: faGithub, link: "https://github.com/aravind-415", hoverColor: "#FFFFFF" },
+  { icon: faLinkedin, link: "https://www.linkedin.com/in/aravind-annadata", hoverColor: "#0077B5" },
   { icon: faInstagram, link: "https://www.instagram.com/aravind_415", hoverColor: "#E1306C" }
 ];
 
-const Home = () => {
+const HomeSection = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isDelayed, setIsDelayed] = useState(false);
 
@@ -100,7 +100,7 @@ const Home = () => {
       setIsDelayed(true);
     }, 3500);
 
-    return () => clearTimeout(timer); 
+    return () => clearTimeout(timer);
   }, []);
 
   // AOS initialization and isLoaded transition
@@ -115,7 +115,7 @@ const Home = () => {
 
       initAOS();
       window.addEventListener('resize', initAOS);
-      setIsLoaded(true); 
+      setIsLoaded(true);
 
       return () => window.removeEventListener('resize', initAOS);
     }
@@ -125,7 +125,6 @@ const Home = () => {
   if (!isDelayed) {
     return (
       <>
-        <Navbar />
         <div className="bg-black min-h-screen"></div>
       </>
     );
@@ -133,7 +132,6 @@ const Home = () => {
 
   return (
     <>
-      <Navbar />
       <div className="bg-black overflow-hidden" id="Home">
         <div className={`relative z-10 mt-20 md:mt-5 transition-all duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`} >
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -191,29 +189,19 @@ const Home = () => {
               </div>
 
               {/* Right Column - Default Image */}
-              <div className="w-full sm:w-3/4 lg:w-1/2 h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[600px] relative flex items-center justify-center order-2 lg:order-2 mt-6 sm:mt-8 lg:mt-0"
+              {/* <div className="w-full sm:w-3/4 lg:w-1/2 h-[400px] sm:h-[500px] lg:h-[600px] xl:h-[700px] relative flex items-center justify-center order-2 lg:order-2 mt-6 sm:mt-8 lg:mt-0"
                 data-aos="fade-left"
                 data-aos-delay="2000"
                 data-aos-duration="1000">
                 <div className="relative w-full h-full">
                   <div className="absolute inset-0 rounded-3xl blur-3xl opacity-20"></div>
                   <div className="relative z-10 rounded-3xl overflow-hidden">
-                    <img
-                      src="/assets/aravind-logo.png"
-                      alt="Default Placeholder"
-                      className=""
-                      onError={(e) => {
-                        e.target.onerror = null;
-                        e.target.style.backgroundColor = '#00F0FF20';
-                        e.target.style.display = 'flex';
-                        e.target.style.alignItems = 'center';
-                        e.target.style.justifyContent = 'center';
-                        e.target.style.color = '#F0F0F0';
-                        e.target.innerHTML = 'Aravind Logo';
-                      }}
-                    />
+                    <Spline3d className="h-[1000px] w-[1000px]" />
                   </div>
                 </div>
+              </div> */}
+              <div className="w-full sm:w-3/4 lg:w-1/2 h-[400px] sm:h-[500px] lg:h-[600px] xl:h-[700px] relative flex items-center justify-center order-2 lg:order-2 mt-6 sm:mt-8 lg:mt-0">
+              <Spline3d/>
               </div>
             </div>
           </div>
@@ -230,4 +218,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeSection;

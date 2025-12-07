@@ -1,18 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    unoptimized: true, // Disable image optimization if not needed
+    unoptimized: true,
   },
+
   webpack(config) {
     config.module.rules.push({
       test: /favicon\.ico$/,
-      type: 'asset/resource',
+      type: "asset/resource",
       generator: {
-        filename: 'static/[name][ext]', // Output favicon without processing
+        filename: "static/[name][ext]",
       },
     });
     return config;
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig; // MUST use CommonJS for Webpack

@@ -74,7 +74,7 @@ const StatCard = ({ color, value, label, description, animation }) => (
 );
 
 /* ----------------------- MAIN ABOUT PAGE ----------------------- */
-const AboutPage = () => {
+const AboutSection = () => {
   const [storedProjects, setStoredProjects] = useState([]);
   const [storedCertificates, setStoredCertificates] = useState([]);
 
@@ -227,4 +227,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default AboutSection;

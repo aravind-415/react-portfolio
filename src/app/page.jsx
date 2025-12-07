@@ -1,20 +1,23 @@
+'use client'
 import React from 'react'
-import Home from './home/page'
-import AboutPage from './about/page'
-import Portfolio from './portfolio/page'
-import ContactPage from './contact/page'
-import WelcomeScreen from './welcome/page'
-import Experience from './Experience/page'
+import WelcomeScreen from '../Components/WelcomeScreen'
+import HomeSection from '../Components/HomeSection'
+import AboutSection from '../Components/AboutSection'
+import Experience from '../Components/Experience'
+import Portfolio from '../Components/Portfolio'
+import ContactSection from '../Components/ContactSection'
+import Navbar from '@/Components/Navbar'
 
 const page = () => {
   return (
     <div className='bg-black'>
       <WelcomeScreen />
-      <Home />
-      <AboutPage />
+      <Navbar />
+      <HomeSection />
+      <AboutSection />
       <Experience />
       <Portfolio />
-      <ContactPage />
+      <ContactSection />
     </div>
   )
 }
