@@ -181,7 +181,7 @@ const AboutSection = () => {
 
             {/* Buttons */}
             <div className="flex flex-col lg:flex-row gap-4">
-              <a href="/assets/resume/Aravind.pdf" download>
+              <a href="/assets/resume/Aravind_resume.pdf" download>
                 <button className="w-full sm:px-6 py-3 rounded-lg bg-linear-to-r from-[#00F0FF] to-[#FF10F0] text-black font-medium hover:scale-110 duration-300">
                   Download CV
                 </button>

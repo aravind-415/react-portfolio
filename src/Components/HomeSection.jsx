@@ -175,7 +175,7 @@ const HomeSection = () => {
 
                   {/* CTA Buttons */}
                   <div className="flex flex-row gap-2 sm:gap-3 w-full justify-center lg:justify-start" data-aos="fade-up" data-aos-delay="2400">
-                    <CTAButton href="/assets/resume/Aravind.pdf" text="Download My CV" icon={faDownload} download />
+                    <CTAButton href="/assets/resume/Aravind_resume.pdf" text="Download My CV" icon={faDownload} download />
                     <CTAButton href="#Contact" text="Contact" icon={faEnvelope} />
                   </div>
 
